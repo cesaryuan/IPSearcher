@@ -5,7 +5,7 @@ from mmap import mmap
 from struct import unpack
 from zipfile import ZipFile
 
-from constants import Constants
+from ..constants import Constants
 from .classes import IP
 from .classes import Singleton
 
