@@ -7,6 +7,7 @@ Description : 工具类定义
 """
 from ipaddress import IPv4Address
 from ipaddress import IPv6Address
+from typing import Union
 
 
 class Singleton(type):
@@ -20,7 +21,7 @@ class Singleton(type):
 
 class IP:
     __slots__ = ('ip', 'country_code', 'country', 'region', 'city', 'latitude', 'longitude')
-    ip: IPv4Address | IPv6Address
+    ip: Union[IPv4Address, IPv6Address]
     country_code: str
     country: str
     region: str
